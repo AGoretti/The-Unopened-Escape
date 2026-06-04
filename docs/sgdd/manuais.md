@@ -69,6 +69,7 @@ A tabela abaixo centraliza os recursos associados a cada puzzle do jogo, incluin
 
 Esta subseção detalha o texto, as tabelas de conversão e as pistas visuais contidas nos arquivos digitais acessados pelo Jogador 2.
 
+<!-- essa tabela vai ser mais pros puzzles q dependem do ID, talvez nem todos precisem dessa matriz de resoluçao-->
 ### 2.1 Manual 01 - Título do Manual 
 
 **1. Conteúdo Literário do Documento:**

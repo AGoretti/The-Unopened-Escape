@@ -12,6 +12,8 @@ Cada partida gerará um cofre com um ID diferente exibido em sua face frontal. O
 
 ## 2. Especificações dos Puzzles
 
+<!-- somente alguns puzzles vao depender do id, nao todos-->
+
 ### 2.1 Puzzle 1
 
 **Descrição Geral:**
