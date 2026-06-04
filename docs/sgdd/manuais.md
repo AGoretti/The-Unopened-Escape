@@ -145,3 +145,5 @@ Esta subseção detalha o texto, as tabelas de conversão e as pistas visuais co
 
 **Matriz de Resolução:**
 [Inserir as regras de cruzamento de dados e lógicas de decodificação.]
+
+

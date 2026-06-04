@@ -46,7 +46,7 @@
   </div>
 
   <div class="team-card">
-    <img class="team-avatar" src="https://github.com/Yanmatheus0812.png" alt="Yan Matheus SB de Aguiar">
+    <img class="team-avatar" src="https://github.com/Yanmatheus0812.png" alt="Yan Matheus Santa Brigida de Aguiar">
     <h3 class="team-name">Yan Matheus SB de Aguiar</h3>
     <p class="team-matricula">231038303</p>
     <p class="team-github"><a href="https://github.com/Yanmatheus0812" target="_blank">@Yanmatheus0812</a></p>
