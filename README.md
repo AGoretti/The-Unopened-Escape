@@ -45,7 +45,7 @@ O jogo é distribuído em formatos prontos para execução através da aba de Re
 
 ---
 
-## 3. Como Jogar (Dinâmica da Partida)
+## 3. Como Jogar 
 
 The Unopened Escape é uma experiência puramente cooperativa onde a comunicação verbal é a única ponte de conexão entre os participantes.
 
@@ -57,7 +57,7 @@ The Unopened Escape é uma experiência puramente cooperativa onde a comunicaç�
 
 ---
 
-## 5. Tecnologias Utilizadas
+## 4. Tecnologias Utilizadas
    
 1. **Unity Engine:** Motor gráfico utilizado para simulação de física, renderização de materiais e controle de iluminação de horror.
 
@@ -69,7 +69,7 @@ The Unopened Escape é uma experiência puramente cooperativa onde a comunicaç�
 
 ---
 
-## 6. Integrantes do Grupo
+## 5. Integrantes do Grupo
 
 <table border="1" style="border-collapse: collapse; width: 100%;">
   <tbody>
