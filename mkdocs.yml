@@ -1,0 +1,38 @@
+site_name: The Unopened Escape
+
+theme:
+  name: material
+  palette:
+    scheme: slate
+    primary: black
+    accent: red
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.tabs.sticky
+
+extra_css:
+  - assets/css/custom.css
+  - assets/css/equipe.css
+
+nav:
+  - Início: index.md
+  - SGDD:
+    - Sobre: sgdd/sobre.md
+    - Conceito e Identidade: sgdd/identidade.md
+    - Estética: sgdd/estetica.md
+    - Descrição do Jogo: sgdd/descricao.md
+    - Lógicas dos Puzzles: sgdd/puzzles.md
+    - Manuais de Resolução: sgdd/manuais.md
+    - Estrutura do Unity: sgdd/unity.md
+    - Assets: sgdd/assets.md
+  - Cronograma:
+    - Sprint 1: sprints/sprint1.md
+    - Sprint 2: sprints/sprint2.md
+    - Sprint 3: sprints/sprint3.md
+    - Sprint 4: sprints/sprint4.md
+    - Sprint 5: sprints/sprint5.md
+  - Entregas:
+    - Entrega Protótipo: entregas/entregaPrototipo.md
+    - Entrega Final: entregas/entregaFinal.md
+  - Equipe: equipe.md
