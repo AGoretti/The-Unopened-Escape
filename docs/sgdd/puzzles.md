@@ -33,20 +33,28 @@ Cada partida gerará um cofre com um ID diferente exibido em sua face frontal. O
 
 ---
 
-### 2.2 Puzzle 2
+### 2.2 Puzzle dos Símbolos Eldritch
 
 **Descrição Geral:**
-  _Descreva o conceito visual e temático deste puzzle aqui._
+  Uma face do cofre exibe símbolos estranhos e místicos (olho, espiral, triângulo, lua, mão, chave, rato, vela, entre outros). O jogador no VR precisa pressionar os símbolos na ordem correta, que varia conforme a combinação de símbolos presentes. A estética remete a manuais antigos e ocultistas, combinando com o tema misterioso do jogo.
 
-**Dependência do ID do Cofre:** ( ) Sim  ( ) Não
-  * _Se sim, como o ID afeta o resultado?_
+**Dependência do ID do Cofre:** ( ) Sim  (x) Não
+  * _A ordem dos símbolos é determinada pelas regras do manual, não pelo ID do cofre._
 
 **Funcionamento Técnico:**
-  _Como o jogador interage com ele no VR/Físico? O que ele precisa acionar ou mover?_
+  No VR (Jogador 1): Uma face do cofre exibe um subconjunto dos símbolos disponíveis. O jogador os pressiona em sequência tocando cada um.
 
-**Regras e Condições:**
-  1. Regra 1...
-  2. Regra 2...
+  No Manual (Jogador 2): O Jogador 2 possui uma tabela de regras de prioridade que define a ordem correta de ativação com base nos símbolos presentes.
+
+  **Fluxo de comunicação:**
+  - Jogador 1: "Estou vendo olho, vela, lua e chave."
+  - Jogador 2 consulta o manual e responde: "Vai em vela, lua, chave e olho."
+
+**Regras e Condições (exemplos):**
+  1. Se houver símbolo de olho e de vela, pressione primeiro a vela.
+  2. Se houver lua, ela sempre vem antes da chave.
+  3. Se houver rato, ele nunca pode ser o último.
+  4. O símbolo com mais pontas deve ser pressionado por último.
 
 
 
