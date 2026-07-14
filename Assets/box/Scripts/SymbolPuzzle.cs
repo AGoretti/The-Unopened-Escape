@@ -16,6 +16,11 @@ public class SymbolPuzzle : MonoBehaviour
     private List<Simbolo> ordemCorreta = new();
     private List<Simbolo> cliquesJogador = new();
 
+    [Header("Áudio")]
+    public AudioSource audioSource;
+    public AudioClip somSucesso;
+
+    private bool resolvido = false;
 
     private Dictionary<Simbolo, int> pontas = new Dictionary<Simbolo, int>()
     {
@@ -128,6 +133,9 @@ public class SymbolPuzzle : MonoBehaviour
 
     public void PressionarSimbolo(int indice)
     {
+        if (resolvido)
+            return;
+            
         Simbolo simboloClicado =
             puzzleManager.simbolosSorteados[indice];
 
@@ -172,12 +180,17 @@ public class SymbolPuzzle : MonoBehaviour
             cliquesJogador.SequenceEqual(ordemCorreta);
 
 
-        if(correto)
+        if(correto && !resolvido)
         {
+            resolvido = true;
+
             Debug.Log("PUZZLE RESOLVIDO!");
 
-            if(ledRenderer != null && ledVerde != null)
+            if (ledRenderer != null && ledVerde != null)
                 ledRenderer.material = ledVerde;
+
+            if (audioSource != null && somSucesso != null)
+                audioSource.PlayOneShot(somSucesso);
         }
         else
         {

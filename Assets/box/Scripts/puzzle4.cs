@@ -14,6 +14,12 @@ public class LeverPuzzle : MonoBehaviour
     public Material ledApagado;
     public Material ledVerde;
 
+    [Header("Áudio")]
+    public AudioSource audioSource;
+    public AudioClip somSucesso;
+
+    private bool resolvido = false;
+
     public void ValidatePuzzle()
     {
         int id = numeroAleatorio.ID;
@@ -87,11 +93,15 @@ public class LeverPuzzle : MonoBehaviour
             lever3.CurrentPosition == expected3 &&
             lever4.CurrentPosition == expected4;
 
-        if(solved)
+
+        if (solved && !resolvido)
         {
+            resolvido = true;
+
             Debug.Log("Puzzle resolvido!");
 
             ledRenderer.material = ledVerde;
+            audioSource.PlayOneShot(somSucesso);
         }
         else
         {
