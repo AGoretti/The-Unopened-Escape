@@ -15,6 +15,13 @@ public class ClickLogger : MonoBehaviour
     [SerializeField]
     private Transform movingPart;
 
+    [Header("Puzzle de Símbolos (opcional)")]
+    [SerializeField]
+    private SymbolPuzzle symbolPuzzle;
+
+    [SerializeField]
+    private int simboloIndice;
+
     [Header("Entrada do Trigger")]
     [SerializeField]
     private InputActionReference leftTriggerAction;
@@ -128,12 +135,13 @@ public class ClickLogger : MonoBehaviour
 
         onButtonClicked?.Invoke();
 
-        SymbolButton symbol = GetComponent<SymbolButton>();
 
-        if(symbol != null)
+        // Se esse botão pertence ao puzzle de símbolos
+        if(symbolPuzzle != null)
         {
-            symbol.OnPressed();
+            symbolPuzzle.PressionarSimbolo(simboloIndice);
         }
+
 
         StartCoroutine(PressAnimation());
     }
