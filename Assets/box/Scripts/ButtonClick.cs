@@ -7,6 +7,13 @@ using UnityEngine.XR.Interaction.Toolkit.Interactables;
 
 public class ClickLogger : MonoBehaviour
 {
+    [Header("Som do Botão")]
+    [SerializeField]
+    private AudioSource audioSource;
+
+    [SerializeField]
+    private AudioClip somClique;
+        
     [Header("Referências")]
     [SerializeField]
     private XRSimpleInteractable buttonInteractable;
@@ -141,6 +148,19 @@ public class ClickLogger : MonoBehaviour
         Debug.Log($"{gameObject.name} foi pressionado.");
 
         onButtonClicked?.Invoke();
+
+
+        // Som do clique
+        if(audioSource != null && somClique != null)
+        {
+            audioSource.PlayOneShot(somClique);
+        }
+
+
+        if(symbolPuzzle != null)
+        {
+            symbolPuzzle.PressionarSimbolo(simboloIndice);
+        }
 
 
         if(soundPuzzle != null)

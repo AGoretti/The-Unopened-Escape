@@ -6,6 +6,10 @@ using UnityEngine.XR.Interaction.Toolkit.Interactors;
 
 public class LeverController : MonoBehaviour
 {
+    [Header("Som da Alavanca")]
+    public AudioSource audioSource;
+    public AudioClip somAlavanca;
+
     [Header("Referências")]
     [Tooltip("O XR Simple Interactable do objeto 'lever' (filho deste pivot)")]
     public XRSimpleInteractable leverInteractable;
@@ -20,6 +24,7 @@ public class LeverController : MonoBehaviour
 
     IXRSelectInteractor interactor;
     bool isOn;
+    LeverPosition ultimaPosicao;
 
     public enum LeverPosition
     {
@@ -29,6 +34,19 @@ public class LeverController : MonoBehaviour
     }
 
     public LeverPosition CurrentPosition { get; private set; }
+
+    void Start()
+    {
+        ultimaPosicao = CurrentPosition;
+    }
+
+    void TocarSomAlavanca()
+    {
+        if(audioSource != null && somAlavanca != null)
+        {
+            audioSource.PlayOneShot(somAlavanca);
+        }
+    }
 
     void OnEnable()
     {
@@ -83,11 +101,29 @@ public class LeverController : MonoBehaviour
 
     float middleTolerance = 10f;
 
+    LeverPosition novaPosicao;
+
+
     if (angleAtual > middleTolerance)
-        CurrentPosition = LeverPosition.Up;
+        novaPosicao = LeverPosition.Up;
+
     else if (angleAtual < -middleTolerance)
-        CurrentPosition = LeverPosition.Down;
+        novaPosicao = LeverPosition.Down;
+
     else
-        CurrentPosition = LeverPosition.Middle;
+        novaPosicao = LeverPosition.Middle;
+
+
+
+    // Tocou quando mudou de nível
+    if(novaPosicao != ultimaPosicao)
+    {
+        TocarSomAlavanca();
+
+        ultimaPosicao = novaPosicao;
+    }
+
+
+    CurrentPosition = novaPosicao;
 }
 }
