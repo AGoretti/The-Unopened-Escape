@@ -1,26 +1,33 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 public class PuzzleManager : MonoBehaviour
 {
-    public MeshRenderer[] simbolos;      // Os Quads dos botões
-    public Material[] materiais;         // Todos os materiais dos símbolos
+    public MeshRenderer[] simbolos;
+    public Material[] materiais;
+
+    public Simbolo[] simbolosSorteados;
 
     void Start()
     {
-        // Embaralha os materiais
+        List<int> indices = new List<int>();
+
         for (int i = 0; i < materiais.Length; i++)
-        {
-            Material temp = materiais[i];
-            int random = Random.Range(i, materiais.Length);
+            indices.Add(i);
 
-            materiais[i] = materiais[random];
-            materiais[random] = temp;
-        }
+        simbolosSorteados = new Simbolo[simbolos.Length];
 
-        // Coloca um símbolo diferente em cada botão
         for (int i = 0; i < simbolos.Length; i++)
         {
-            simbolos[i].material = materiais[i];
+            int sorteado = Random.Range(0, indices.Count);
+
+            int indiceMaterial = indices[sorteado];
+
+            simbolos[i].material = materiais[indiceMaterial];
+
+            simbolosSorteados[i] = (Simbolo)indiceMaterial;
+
+            indices.RemoveAt(sorteado);
         }
     }
 }

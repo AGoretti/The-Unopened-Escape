@@ -21,6 +21,15 @@ public class LeverController : MonoBehaviour
     IXRSelectInteractor interactor;
     bool isOn;
 
+    public enum LeverPosition
+    {
+        Down,
+        Middle,
+        Up
+    }
+
+    public LeverPosition CurrentPosition { get; private set; }
+
     void OnEnable()
     {
         if (leverInteractable == null)
@@ -43,13 +52,13 @@ public class LeverController : MonoBehaviour
     void OnRelease(SelectExitEventArgs args) => interactor = null;
 
     void Update()
+{
+    // Só movimenta a alavanca enquanto ela está sendo segurada
+    if (interactor != null)
     {
-        if (interactor == null) return;
-
-        // Direção do pivot até a mão, no espaço LOCAL do pai (leverBase, que NÃO gira)
         Vector3 direction = interactor.GetAttachTransform(leverInteractable).position - transform.position;
         direction = transform.parent.InverseTransformDirection(direction);
-        direction.x = 0f; // ignora profundidade lateral, olha só o plano Y-Z
+        direction.x = 0f;
         direction.Normalize();
 
         float angle = Mathf.Atan2(direction.z, direction.y) * Mathf.Rad2Deg;
@@ -65,4 +74,20 @@ public class LeverController : MonoBehaviour
             else onLeverDown?.Invoke();
         }
     }
+
+    // Descobre a posição atual da alavanca olhando a rotação dela
+    float angleAtual = transform.localEulerAngles.x;
+
+    if (angleAtual > 180f)
+        angleAtual -= 360f;
+
+    float middleTolerance = 10f;
+
+    if (angleAtual > middleTolerance)
+        CurrentPosition = LeverPosition.Up;
+    else if (angleAtual < -middleTolerance)
+        CurrentPosition = LeverPosition.Down;
+    else
+        CurrentPosition = LeverPosition.Middle;
+}
 }

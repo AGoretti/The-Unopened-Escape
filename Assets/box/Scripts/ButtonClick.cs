@@ -127,6 +127,14 @@ public class ClickLogger : MonoBehaviour
         Debug.Log($"{gameObject.name} foi pressionado.");
 
         onButtonClicked?.Invoke();
+
+        SymbolButton symbol = GetComponent<SymbolButton>();
+
+        if(symbol != null)
+        {
+            symbol.OnPressed();
+        }
+
         StartCoroutine(PressAnimation());
     }
 
