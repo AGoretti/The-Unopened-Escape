@@ -48,6 +48,13 @@ public class ClickLogger : MonoBehaviour
     private bool isHovered;
     private bool isPressing;
 
+    [Header("Puzzle de Som")]
+    [SerializeField]
+    private SoundPuzzle soundPuzzle;
+
+    [SerializeField]
+    private int quadIndice;
+
     private void Awake()
     {
         if (buttonInteractable == null)
@@ -136,10 +143,9 @@ public class ClickLogger : MonoBehaviour
         onButtonClicked?.Invoke();
 
 
-        // Se esse botão pertence ao puzzle de símbolos
-        if(symbolPuzzle != null)
+        if(soundPuzzle != null)
         {
-            symbolPuzzle.PressionarSimbolo(simboloIndice);
+            soundPuzzle.PressionarQuad(quadIndice);
         }
 
 

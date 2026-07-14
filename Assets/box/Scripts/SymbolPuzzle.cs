@@ -19,6 +19,7 @@ public class SymbolPuzzle : MonoBehaviour
     [Header("Áudio")]
     public AudioSource audioSource;
     public AudioClip somSucesso;
+    public AudioClip somErro;
 
     private bool resolvido = false;
 
@@ -198,6 +199,9 @@ public class SymbolPuzzle : MonoBehaviour
 
             if(ledRenderer != null && ledVermelho != null)
                 ledRenderer.material = ledVermelho;
+
+            if (audioSource != null && somErro != null)
+                audioSource.PlayOneShot(somErro);
 
             cliquesJogador.Clear();
         }

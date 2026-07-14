@@ -17,6 +17,8 @@ public class LeverPuzzle : MonoBehaviour
     [Header("Áudio")]
     public AudioSource audioSource;
     public AudioClip somSucesso;
+    public AudioClip somErro;
+    private float ultimoErro = 0;
 
     private bool resolvido = false;
 
@@ -106,6 +108,14 @@ public class LeverPuzzle : MonoBehaviour
         else
         {
             Debug.Log("Configuração incorreta.");
+
+            if (Time.time - ultimoErro > 0.5f)
+            {
+                ultimoErro = Time.time;
+
+                if (audioSource != null && somErro != null)
+                    audioSource.PlayOneShot(somErro);
+            }
         }
     }
 }
