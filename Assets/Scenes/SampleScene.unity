@@ -487,8 +487,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278584839
+  m_fontColor: {r: 0.02745098, g: 0.023529412, b: 0.023529412, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1573,7 +1573,6 @@ GameObject:
   - component: {fileID: 207664525}
   - component: {fileID: 207664524}
   - component: {fileID: 207664528}
-  - component: {fileID: 207664527}
   - component: {fileID: 207664529}
   m_Layer: 0
   m_Name: Handle
@@ -1675,29 +1674,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 207664522}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &207664527
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 207664522}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4853a99e900dd8449b0b8e3f48759a40, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::LeverController
-  audioSource: {fileID: 207664529}
-  somAlavanca: {fileID: 8300000, guid: f5fcff3f2d6c9bade90386412983ded6, type: 3}
-  leverInteractable: {fileID: 207664528}
-  minAngle: -30
-  maxAngle: 30
-  onLeverUp:
-    m_PersistentCalls:
-      m_Calls: []
-  onLeverDown:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &207664528
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1888,7 +1864,6 @@ GameObject:
   - component: {fileID: 296119747}
   - component: {fileID: 296119746}
   - component: {fileID: 296119745}
-  - component: {fileID: 296119744}
   - component: {fileID: 296119749}
   m_Layer: 0
   m_Name: Handle
@@ -1912,29 +1887,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 669223847}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &296119744
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 296119742}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4853a99e900dd8449b0b8e3f48759a40, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::LeverController
-  audioSource: {fileID: 296119749}
-  somAlavanca: {fileID: 8300000, guid: f5fcff3f2d6c9bade90386412983ded6, type: 3}
-  leverInteractable: {fileID: 296119745}
-  minAngle: -30
-  maxAngle: 30
-  onLeverUp:
-    m_PersistentCalls:
-      m_Calls: []
-  onLeverDown:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &296119745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2231,10 +2183,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LeverPuzzle
   numeroAleatorio: {fileID: 381938435}
-  lever1: {fileID: 207664527}
-  lever2: {fileID: 1141788605}
-  lever3: {fileID: 296119744}
-  lever4: {fileID: 576215237}
+  lever1: {fileID: 0}
+  lever2: {fileID: 0}
+  lever3: {fileID: 0}
+  lever4: {fileID: 0}
   ledRenderer: {fileID: 1041515488}
   ledApagado: {fileID: 2100000, guid: a9d47108d7596622198869e81440ffc2, type: 2}
   ledVerde: {fileID: 2100000, guid: 653d05b1ac2962ca7abe1f3e532c47f7, type: 2}
@@ -2681,8 +2633,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278584839
+  m_fontColor: {r: 0.02745098, g: 0.023529412, b: 0.023529412, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3757,7 +3709,6 @@ GameObject:
   - component: {fileID: 576215235}
   - component: {fileID: 576215234}
   - component: {fileID: 576215233}
-  - component: {fileID: 576215237}
   - component: {fileID: 576215238}
   m_Layer: 0
   m_Name: Handle
@@ -3934,29 +3885,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 576215231}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &576215237
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 576215231}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4853a99e900dd8449b0b8e3f48759a40, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::LeverController
-  audioSource: {fileID: 576215238}
-  somAlavanca: {fileID: 8300000, guid: f5fcff3f2d6c9bade90386412983ded6, type: 3}
-  leverInteractable: {fileID: 576215233}
-  minAngle: -30
-  maxAngle: 30
-  onLeverUp:
-    m_PersistentCalls:
-      m_Calls: []
-  onLeverDown:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!82 &576215238
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4578,6 +4506,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 669223847}
+  - component: {fileID: 669223848}
   m_Layer: 0
   m_Name: Pivot
   m_TagString: Untagged
@@ -4601,6 +4530,30 @@ Transform:
   - {fileID: 296119743}
   m_Father: {fileID: 1436618248}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &669223848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 669223846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4853a99e900dd8449b0b8e3f48759a40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LeverController
+  audioSource: {fileID: 296119749}
+  somAlavanca: {fileID: 8300000, guid: f5fcff3f2d6c9bade90386412983ded6, type: 3}
+  leverInteractable: {fileID: 296119745}
+  minAngle: -30
+  maxAngle: 30
+  smoothTime: 0.06
+  onLeverUp:
+    m_PersistentCalls:
+      m_Calls: []
+  onLeverDown:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &673766901
 GameObject:
   m_ObjectHideFlags: 0
@@ -4667,8 +4620,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278584839
+  m_fontColor: {r: 0.02745098, g: 0.023529412, b: 0.023529412, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -4791,6 +4744,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 674976109}
+  - component: {fileID: 674976110}
   m_Layer: 0
   m_Name: Pivot
   m_TagString: Untagged
@@ -4814,6 +4768,30 @@ Transform:
   - {fileID: 1141788604}
   m_Father: {fileID: 1895305961}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &674976110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 674976108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4853a99e900dd8449b0b8e3f48759a40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LeverController
+  audioSource: {fileID: 1141788610}
+  somAlavanca: {fileID: 8300000, guid: f5fcff3f2d6c9bade90386412983ded6, type: 3}
+  leverInteractable: {fileID: 1141788606}
+  minAngle: -30
+  maxAngle: 30
+  smoothTime: 0.06
+  onLeverUp:
+    m_PersistentCalls:
+      m_Calls: []
+  onLeverDown:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &675608326
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5662,8 +5640,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278584839
+  m_fontColor: {r: 0.02745098, g: 0.023529412, b: 0.023529412, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -7907,7 +7885,6 @@ GameObject:
   - component: {fileID: 1141788608}
   - component: {fileID: 1141788607}
   - component: {fileID: 1141788606}
-  - component: {fileID: 1141788605}
   - component: {fileID: 1141788610}
   m_Layer: 0
   m_Name: Handle
@@ -7931,29 +7908,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 674976109}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1141788605
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1141788603}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4853a99e900dd8449b0b8e3f48759a40, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::LeverController
-  audioSource: {fileID: 1141788610}
-  somAlavanca: {fileID: 8300000, guid: f5fcff3f2d6c9bade90386412983ded6, type: 3}
-  leverInteractable: {fileID: 1141788606}
-  minAngle: -30
-  maxAngle: 30
-  onLeverUp:
-    m_PersistentCalls:
-      m_Calls: []
-  onLeverDown:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &1141788606
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8230,7 +8184,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1149416738}
   m_LocalRotation: {x: 0.0023448789, y: -0.7071029, z: -0.002098071, w: -0.7071037}
-  m_LocalPosition: {x: 0, y: 0, z: -0.00762}
+  m_LocalPosition: {x: 0, y: 0, z: -0.00791}
   m_LocalScale: {x: 0.0003, y: 0.00029999996, z: 0.00029999996}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8238,7 +8192,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: -179.64, y: -90, z: -180.02}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0055, y: 0.00163}
+  m_AnchoredPosition: {x: -0.0051, y: 0.0012}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1149416740
@@ -8261,7 +8215,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: volume do jogo
+  m_text: AUDIO CONTROL
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -8270,8 +8224,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278584839
+  m_fontColor: {r: 0.02641511, g: 0.025468152, b: 0.025468152, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -8294,7 +8248,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 3
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -8327,7 +8281,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0.0013339515, z: 0.10639286, w: -3.8176737}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
@@ -8559,6 +8513,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1183972699}
+  - component: {fileID: 1183972700}
   m_Layer: 0
   m_Name: Pivot
   m_TagString: Untagged
@@ -8582,6 +8537,30 @@ Transform:
   - {fileID: 207664523}
   m_Father: {fileID: 405734458}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1183972700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1183972698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4853a99e900dd8449b0b8e3f48759a40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LeverController
+  audioSource: {fileID: 207664529}
+  somAlavanca: {fileID: 8300000, guid: f5fcff3f2d6c9bade90386412983ded6, type: 3}
+  leverInteractable: {fileID: 207664528}
+  minAngle: -30
+  maxAngle: 30
+  smoothTime: 0.06
+  onLeverUp:
+    m_PersistentCalls:
+      m_Calls: []
+  onLeverDown:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1187633149
 GameObject:
   m_ObjectHideFlags: 0
@@ -8826,8 +8805,8 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5000001
-  m_Height: 2
+  m_Radius: 0.7
+  m_Height: 3
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!23 &1205257428
@@ -12275,6 +12254,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1744040457}
+  - component: {fileID: 1744040458}
   m_Layer: 0
   m_Name: Pivot
   m_TagString: Untagged
@@ -12298,6 +12278,30 @@ Transform:
   - {fileID: 576215232}
   m_Father: {fileID: 940209121}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1744040458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1744040456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4853a99e900dd8449b0b8e3f48759a40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LeverController
+  audioSource: {fileID: 576215238}
+  somAlavanca: {fileID: 8300000, guid: f5fcff3f2d6c9bade90386412983ded6, type: 3}
+  leverInteractable: {fileID: 576215233}
+  minAngle: -30
+  maxAngle: 30
+  smoothTime: 0.06
+  onLeverUp:
+    m_PersistentCalls:
+      m_Calls: []
+  onLeverDown:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1757760842
 GameObject:
   m_ObjectHideFlags: 0
@@ -14829,8 +14833,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278584839
+  m_fontColor: {r: 0.02745098, g: 0.023529412, b: 0.023529412, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -14886,7 +14890,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: 6.391548, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
@@ -14960,7 +14964,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: -270, y: -180, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.00147, y: 0.00471}
+  m_AnchoredPosition: {x: -0.00148, y: 0.00471}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2084148737
