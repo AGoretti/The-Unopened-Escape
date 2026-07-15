@@ -1,0 +1,177 @@
+Creditos dos assets de audio (gerado por tools/download_sounds.py)
+======================================================================
+
+Music/music_horror_psicologico.ogg
+  Nome: ambience03.wav
+  Autor: yewbic
+  Licenca: http://creativecommons.org/publicdomain/zero/1.0/
+  URL: https://freesound.org/people/yewbic/sounds/33796/
+
+Music/music_encerramento_vitoria.ogg
+  Nome: Journey To The Interweb
+  Autor: Aemyn
+  Licenca: http://creativecommons.org/publicdomain/zero/1.0/
+  URL: https://freesound.org/people/Aemyn/sounds/609250/
+
+Music/music_encerramento_derrota.ogg
+  Nome: King's death - ambient soundscape
+  Autor: xkeril
+  Licenca: http://creativecommons.org/publicdomain/zero/1.0/
+  URL: https://freesound.org/people/xkeril/sounds/626199/
+
+Ambience/amb_radio_chiado_loop.ogg
+  Nome: TV Static Looping
+  Autor: dotY21
+  Licenca: http://creativecommons.org/publicdomain/zero/1.0/
+  URL: https://freesound.org/people/dotY21/sounds/335203/
+
+Ambience/amb_goteiras_loop.ogg
+  Nome: Water Dripping in Cave.wav
+  Autor: Sclolex
+  Licenca: http://creativecommons.org/publicdomain/zero/1.0/
+  URL: https://freesound.org/people/Sclolex/sounds/177958/
+
+Ambience/amb_faiscas_eletricas.ogg
+  Nome: Neon Lamp, Switch On, Hum
+  Autor: Kinoton
+  Licenca: http://creativecommons.org/publicdomain/zero/1.0/
+  URL: https://freesound.org/people/Kinoton/sounds/351430/
+
+Ambience/amb_passos_teto.ogg
+  Nome: Walking_Wood.mp3
+  Autor: taure
+  Licenca: http://creativecommons.org/publicdomain/zero/1.0/
+  URL: https://freesound.org/people/taure/sounds/362777/
+
+Ambience/amb_sotao_vento_loop.ogg
+  Nome: Crashing Starship
+  Autor: Aemyn
+  Licenca: http://creativecommons.org/publicdomain/zero/1.0/
+  URL: https://freesound.org/people/Aemyn/sounds/564166/
+
+Ambience/amb_ratos_correndo.ogg
+  Nome: rat-squeak.wav
+  Autor: toefur
+  Licenca: http://creativecommons.org/publicdomain/zero/1.0/
+  URL: https://freesound.org/people/toefur/sounds/288941/
+
+Ambience/amb_ampulheta_areia_loop.ogg
+  Nome: Hourglass
+  Autor: 180118
+  Licenca: http://creativecommons.org/licenses/by-nc/3.0/
+  URL: https://freesound.org/people/180118/sounds/442893/
+
+Interaction/sfx_engrenagens_cubo_loop.ogg
+  Nome: Foley_Mechanism_Light_Buzz_Short_Loop_Mono_DR05.wav
+  Autor: Nox_Sound
+  Licenca: http://creativecommons.org/publicdomain/zero/1.0/
+  URL: https://freesound.org/people/Nox_Sound/sounds/553075/
+
+Interaction/sfx_rotacao_click.ogg
+  Nome: ClipLoad2.wav
+  Autor: BMacZero
+  Licenca: http://creativecommons.org/publicdomain/zero/1.0/
+  URL: https://freesound.org/people/BMacZero/sounds/94119/
+
+Interaction/sfx_snap_magnetico.ogg
+  Nome: Journey To The Interweb
+  Autor: Aemyn
+  Licenca: http://creativecommons.org/publicdomain/zero/1.0/
+  URL: https://freesound.org/people/Aemyn/sounds/609250/
+
+Interaction/sfx_clique_autenticacao.ogg
+  Nome: S-VHS VTR tape insert & eject
+  Autor: LukaCafuka
+  Licenca: http://creativecommons.org/publicdomain/zero/1.0/
+  URL: https://freesound.org/people/LukaCafuka/sounds/845461/
+
+Interaction/sfx_slider_friccao_loop.ogg
+  Nome: Industrial Metallic Friction Loop
+  Autor: kkenny101
+  Licenca: http://creativecommons.org/publicdomain/zero/1.0/
+  URL: https://freesound.org/people/kkenny101/sounds/856531/
+
+Events/evt_radio_desligando.ogg
+  Nome: Radio receiver on/off
+  Autor: LukaCafuka
+  Licenca: http://creativecommons.org/publicdomain/zero/1.0/
+  URL: https://freesound.org/people/LukaCafuka/sounds/753402/
+
+Events/evt_alarme_intruso.ogg
+  Nome: Industrial Alarm
+  Autor: Latranz
+  Licenca: http://creativecommons.org/publicdomain/zero/1.0/
+  URL: https://freesound.org/people/Latranz/sounds/520200/
+
+Events/evt_comportas_fechando.ogg
+  Nome: Door Smash 1
+  Autor: qubodup
+  Licenca: http://creativecommons.org/publicdomain/zero/1.0/
+  URL: https://freesound.org/people/qubodup/sounds/218890/
+
+Events/evt_cadeira_arrastada.ogg
+  Nome: Padlock Chain Lock Unlock
+  Autor: leonelmail
+  Licenca: http://creativecommons.org/publicdomain/zero/1.0/
+  URL: https://freesound.org/people/leonelmail/sounds/330635/
+
+Events/evt_escotilha.ogg
+  Nome: door, open, space hatch, hydraulic.wav
+  Autor: pointparkcinema
+  Licenca: http://creativecommons.org/publicdomain/zero/1.0/
+  URL: https://freesound.org/people/pointparkcinema/sounds/402500/
+
+Events/evt_mesa_balancando.ogg
+  Nome: Rubber Metal Wood Impact Collision Bang
+  Autor: qubodup
+  Licenca: http://creativecommons.org/publicdomain/zero/1.0/
+  URL: https://freesound.org/people/qubodup/sounds/54850/
+
+Events/evt_teto_espinhos_loop.ogg
+  Nome: Chainsaw Idle
+  Autor: DrinkingWindGames
+  Licenca: https://creativecommons.org/licenses/by/4.0/
+  URL: https://freesound.org/people/DrinkingWindGames/sounds/463735/
+
+Events/evt_blackout.ogg
+  Nome: Drone taking off and landing
+  Autor: hoshisato
+  Licenca: http://creativecommons.org/publicdomain/zero/1.0/
+  URL: https://freesound.org/people/hoshisato/sounds/822500/
+
+Feedback/sfx_areia_acelerada.ogg
+  Nome: salt shacking_DanielMarais_190266_OWI.wav
+  Autor: DanielMarais
+  Licenca: https://creativecommons.org/licenses/by/4.0/
+  URL: https://freesound.org/people/DanielMarais/sounds/492606/
+
+Feedback/fb_engrenagens_vitoria.ogg
+  Nome: Bank Vault Combination Lock Sound - V6
+  Autor: Pixeliota
+  Licenca: http://creativecommons.org/publicdomain/zero/1.0/
+  URL: https://freesound.org/people/Pixeliota/sounds/678254/
+
+Feedback/fb_estruturas_derrota.ogg
+  Nome: Brick crash
+  Autor: discofield
+  Licenca: http://creativecommons.org/publicdomain/zero/1.0/
+  URL: https://freesound.org/people/discofield/sounds/711656/
+
+Terror/terror_entidade_sussurros.ogg
+  Nome: Ghostly Whispers
+  Autor: dimbark1
+  Licenca: http://creativecommons.org/publicdomain/zero/1.0/
+  URL: https://freesound.org/people/dimbark1/sounds/316797/
+
+Puzzle/puzzle_tap_curto.ogg
+  Nome: dragslide1.mp3
+  Autor: ChaosEntertainment
+  Licenca: http://creativecommons.org/publicdomain/zero/1.0/
+  URL: https://freesound.org/people/ChaosEntertainment/sounds/396705/
+
+Puzzle/puzzle_tap_longo.ogg
+  Nome: Conductor Baton Taps
+  Autor: biphelps
+  Licenca: http://creativecommons.org/publicdomain/zero/1.0/
+  URL: https://freesound.org/people/biphelps/sounds/752607/
+

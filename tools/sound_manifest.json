@@ -1,0 +1,40 @@
+{
+  "_comment": "Manifest para tools/download_sounds.py. Cada entrada busca no Freesound.org (CC0 preferido) por 'query', ou usa 'freesound_id' se um ID especifico ja foi curado. 'file' e relativo a Assets/Audio/Resources/Audio/. Queries mantidas curtas (2-3 palavras) pois o Freesound trata termos como AND implicito.",
+  "sounds": [
+    { "file": "Music/music_horror_psicologico.ogg", "query": "dark ambient drone" },
+    { "file": "Music/music_encerramento_vitoria.ogg", "query": "calm ending music" },
+    { "file": "Music/music_encerramento_derrota.ogg", "query": "funeral drone" },
+
+    { "file": "Ambience/amb_radio_chiado_loop.ogg", "query": "radio static loop" },
+    { "file": "Ambience/amb_goteiras_loop.ogg", "query": "water drip echo" },
+    { "file": "Ambience/amb_faiscas_eletricas.ogg", "query": "electric spark" },
+    { "file": "Ambience/amb_passos_teto.ogg", "query": "heavy footsteps wood" },
+    { "file": "Ambience/amb_sotao_vento_loop.ogg", "query": "wind creak wood" },
+    { "file": "Ambience/amb_ratos_correndo.ogg", "query": "rats squeak" },
+    { "file": "Ambience/amb_ampulheta_areia_loop.ogg", "query": "sand falling glass" },
+
+    { "file": "Interaction/sfx_engrenagens_cubo_loop.ogg", "query": "gear mechanism loop" },
+    { "file": "Interaction/sfx_rotacao_click.ogg", "query": "mechanical click ratchet" },
+    { "file": "Interaction/sfx_snap_magnetico.ogg", "query": "metal clank impact" },
+    { "file": "Interaction/sfx_clique_autenticacao.ogg", "query": "industrial button press" },
+    { "file": "Interaction/sfx_slider_friccao_loop.ogg", "query": "metal friction loop" },
+
+    { "file": "Events/evt_radio_desligando.ogg", "freesound_id": 753402 },
+    { "file": "Events/evt_alarme_intruso.ogg", "query": "industrial alarm" },
+    { "file": "Events/evt_comportas_fechando.ogg", "query": "metal gate slam" },
+    { "file": "Events/evt_cadeira_arrastada.ogg", "query": "chains pulling metal" },
+    { "file": "Events/evt_escotilha.ogg", "freesound_id": 402500 },
+    { "file": "Events/evt_mesa_balancando.ogg", "query": "wood table banging" },
+    { "file": "Events/evt_teto_espinhos_loop.ogg", "query": "motor chain loop" },
+    { "file": "Events/evt_blackout.ogg", "query": "power down thud" },
+
+    { "file": "Feedback/sfx_areia_acelerada.ogg", "query": "sand pouring fast" },
+    { "file": "Feedback/fb_engrenagens_vitoria.ogg", "freesound_id": 678254 },
+    { "file": "Feedback/fb_estruturas_derrota.ogg", "query": "wood crushing crash" },
+
+    { "file": "Terror/terror_entidade_sussurros.ogg", "query": "whispers creepy" },
+
+    { "file": "Puzzle/puzzle_tap_curto.ogg", "query": "metal tap short" },
+    { "file": "Puzzle/puzzle_tap_longo.ogg", "query": "metal tap long" }
+  ]
+}
