@@ -6,6 +6,10 @@
   <Project Path="Unity.XR.Interaction.Toolkit.Samples.Hands.csproj" />
   <Project Path="Unity.XR.Interaction.Toolkit.Samples.DeviceSimulator.csproj" />
   <Project Path="Unity.XR.Interaction.Toolkit.Samples.SpatialKeyboard.Editor.csproj" />
+<<<<<<< HEAD
+  <Project Path="Assembly-CSharp-Editor.csproj" />
+=======
+>>>>>>> 6e5c50766a3ce4626c4a8e72d4c9f32000b6c062
   <Project Path="Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor.csproj" />
   <Project Path="Unity.XR.Interaction.Toolkit.Samples.Hands.Editor.csproj" />
 </Solution>
