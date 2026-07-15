@@ -67,6 +67,6 @@
         "*.sln": "*.csproj",
         "*.slnx": "*.csproj"
     },
-    "dotnet.defaultSolution": "TEJD.slnx",
+    "dotnet.defaultSolution": "The-Unopened-Escape.slnx",
     "dotnet.enableWorkspaceBasedDevelopment": false
 }
